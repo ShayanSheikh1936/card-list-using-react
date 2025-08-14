@@ -1,24 +1,9 @@
-import "./ProductCard.css";
 import Btns from "./button";
 export function ProductCard({ cardData }) {
-  const { name, price, quantity, category, description, image } = cardData;
+  const { name, price, category, description, image } = cardData;
 
   return (
     <>
-    {/* <div className="product-card">
-      <img src={image} alt={name} className="product-image" />
-      <div className="product-body">
-        <h2 className="product-name">{name}</h2>
-        <p className="product-category">{category}</p>
-        <p className="product-desc">{description}</p>
-        <div className="product-meta">
-          <span className="price">₹{price}</span>
-          <span className="quantity">{quantity} in stock</span>
-        </div>
-        <Btns />
-      </div>
-    </div> */}
-
     <div className="card">
   <div className="image_container">
     <img className="image" src={image} alt={name}></img>
